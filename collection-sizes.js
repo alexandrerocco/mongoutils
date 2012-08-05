@@ -44,6 +44,7 @@ for(i in collections) {
         notused = coll.storageSize() - coll.dataSize();
 
         print('Collection: ' + coll);
+        print('Capped: ' + coll.isCapped());
         print('Docs: ' + formatNumber(docs));
         print('Size: ' + getBytesWithUnit(size));
         print('Not used: ' + getBytesWithUnit(notused));
